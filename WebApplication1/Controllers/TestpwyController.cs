@@ -10,6 +10,7 @@ namespace WebApplication1.Controllers
 {
     public class TestpwyController : ApiController
     {
+        
         private readonly IManagment lista;
         public TestpwyController(IManagment lista)
         {
@@ -19,6 +20,7 @@ namespace WebApplication1.Controllers
         {
             lista = new Osoby();
         }
+        [HttpPost]
         public void PostOsoba(Osoba osoba)
         {
             lista.addOsoba(osoba);
