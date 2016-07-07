@@ -33,6 +33,7 @@ namespace WebApplication1.Controllers
         {
             return lista.getAllOsoba();
         }
+        [HttpGet]
         public Osoba dajOsobePoID(int id)
         {
             return lista.getPersonById(id);
