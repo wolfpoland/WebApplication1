@@ -5,7 +5,11 @@ using System.Web;
 
 namespace WebApplication1.Models
 {
-    public class IManagment
+    public interface IManagment
     {
+        void addOsoba(Osoba osoba);
+        void removeOsoba(Osoba osoba);
+        Osoba getPersonById(int id);
+        Osoba[] getAllOsoba();
     }
 }
